@@ -1,0 +1,93 @@
+@charset "UFT-8";
+
+body {
+    background-image: url("../media/pictures/hatter.jpg");
+    color: whitesmoke;
+}
+
+main,nav,article,asie,footer {
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+    padding: 10pt;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer, nav {
+    flex: 0 0 100%;
+}
+
+article {
+    flex: 0 0 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+aside {
+    flex: 0 0 25%;
+}
+
+#bal {
+
+    flex: 0 0 25%;
+}
+
+nav {
+    order: -2;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: blueviolet;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+nav ul li {
+    padding: 10pt;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: snow;
+}
+
+img {
+    width: 100%;
+}
+article div {
+    flex: 0 0 calc(33.333% - 10px);
+    margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    #bal{order: -1;}
+    main {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #bal{order: -1;}
+    main {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}@media only screen and (max-width: 500px) {
+    article div{
+        flex: 0 0 100%;
+    }
+    nav, nav ul{
+        flex-direction: column;
+    }
+}
