@@ -1,5 +1,5 @@
 var newtabwindows = "";
-var locationwindow = "210215_regpage/wwlc.html"
+var locationwindow = "wwlc.html"
 function sendbutton(){
     newtabwindows = window.open(locationwindow);
 }
